@@ -23,6 +23,7 @@ require("lazy").setup({
   },
 
   { import = "plugins" },
+  { import = "eastmark.plugins" },
 }, lazy_config)
 
 -- load theme
@@ -31,6 +32,7 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
+require "eastmark.options"
 
 vim.schedule(function()
   require "mappings"
