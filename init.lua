@@ -33,6 +33,8 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 require "eastmark.options"
+require "eastmark.autocmd"
+require "eastmark.mappings"
 
 vim.schedule(function()
   require "mappings"

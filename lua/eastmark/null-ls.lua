@@ -5,6 +5,7 @@ local opts = {
   sources = {
     null_ls.builtins.formatting.clang_format,
   },
+  -- Comment the below code to disable clang-format on save
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({
